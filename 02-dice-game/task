@@ -1,0 +1,15 @@
+Create a folder on the desktop and add VSCode: dice-game Create index.html and paste the code I shared:
+ Create images folder and add the images I shared
+ Create styles.css and paste the css I shared
+
+ //1. generating a random number from 1-6
+let randomNumber1=Math.floor(Math.random()*6)+1;
+// console.log(randomNumber1);
+//2. generate random image source
+//                  images/dice         3       .png
+let randomImageSrc="images/dice"+randomNumber1+".png"
+//3. Get the first image
+let image1 = document.querySelector(".img1");
+//4. Assign randomImageSrc as a value of src attribute of the image1
+// setAttribute(ATTRIBURE NAME, ATTRIBUTE VALUE)
+image1.setAttribute("src",randomImageSrc);
