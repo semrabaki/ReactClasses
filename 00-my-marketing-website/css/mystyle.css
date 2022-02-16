@@ -1,0 +1,55 @@
+.bg-dark-blue{
+    background-color: #073b4c;
+
+}
+.rounded-custom {
+    border-radius: 1rem;
+}
+
+.my-top-part-spacing{
+
+    padding:2% 5%;
+
+}
+/* We can use existing bootstrap classes here This will override the bootstrap.css class 
+I am overriding nav-bar-brand bootstrap class*/
+/*
+Since Ubuntu is not in bootstrap it is not applying the changes. It is coming from google-fonts.
+we need to link it in the index.html
+*/
+
+.navbar-brand{
+    font-family:'Ubuntu';
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.download-links{
+    display: flex;
+    justify-content: center;
+
+}
+
+/*  Conditional Styling using media
+rotate the image when for only medium or large screens
+Medium
+> 768px
+
+When min-width 768px then rotate
+when mx-width 767px then do not rotate*/
+
+@media(max-width:767px )
+{
+    .phone-image{
+        transform:rotate(0deg);
+        margin-bottom: 10%;
+    }
+}
+@media(min-width:768px )
+{
+    .phone-image{
+        transform:rotate(25deg);
+        margin:10%;
+        width: 100%;
+    }
+}

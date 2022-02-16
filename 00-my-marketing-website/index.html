@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Marketing</title>
+    <!--We are linking the google font Ubanto to our css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!--Link bootstrap and html-->
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\mystyle.css">
+
+</head>
+<body>
+    <section id="top-part" class="bg-dark-blue text-light">
+        <div class="container-fluid my-top-part-spacing"> 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning rounded-custom">
+                <a class="navbar-brand" href="#">E-mail</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="row">
+                   <!--There are 2 divs:Div1 has text and buttons.div2 has image-->
+                  <div class="col-lg-6 col-md-6 col-sm-12"> <!--this allows us to create 2 column in large and medium but 1 column in small screen-->
+              <h1>Do you want to send your product to millions, with just one click?
+              See our new services and amazing plans.
+              Contact us to learn more about our services. 
+              We are here to help you!</h1>
+                  <div class="download-links my-5">
+                      <!--giving spaces between buttons and icaons-texts-->
+                    <button type="button" class="btn btn-secondary btn-lg mr-3"><i class="fa-brands fa-apple mr-2"></i>Download</button>
+                    <button type="button" class="btn btn-light btn-lg"><i class="fa-brands fa-android mr-2"></i>Download</button>   
+                  </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <!--create phone image class to transform the image-->
+                     <img class="phone-image" src="images\mobile.png" alt="mobile_image">
+                  </div>
+              </div>
+        </div>
+       
+    </section>
+  
+</body>
+</html>
