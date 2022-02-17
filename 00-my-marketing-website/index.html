@@ -2,15 +2,43 @@
 <html lang="en">
 <head>
     <title>My Marketing</title>
+    <!-- for making interactive -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
     <!--We are linking the google font Ubanto to our css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <!--Link bootstrap and html-->
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="css\mystyle.css">
+    <!--importing bootrtrap.js from js folder-->
+    <!--we import js codes using script-->
+    <script src="js/bootstrap.js"></script>
+   
 
 </head>
 <body>
+  <!--sections, div, ... block elements are used to seperate the pages in logical order
+     such as top-part, pricing, comments, ads
+    
+    --containers--
+    continer:gives some spacing in the right and left
+    container-fluid:making the full width
+
+    --backgorun colors---
+    bg-primary
+    
+
+    ----nav bars------------
+    we can create nav really quick
+    navbar-dark: use when backgorund is dark to make text light
+    navbar-light: use when backgorund is light to make text dark
+
+
+    ----grid system--------------
+    
+
+    
+    -->
     <section id="top-part" class="bg-dark-blue text-light">
         <div class="container-fluid my-top-part-spacing"> 
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning rounded-custom">
@@ -48,7 +76,150 @@
                   </div>
               </div>
         </div>
-       
+    </section>
+    <!--add section beginings-->
+    <section>
+      <div class="container-fluid m-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+           <i class="fa-solid fa-rocket fa-3x text-warning ml-5"></i>
+           <h2>Fast Connection</h2>
+           <p>Connect with many people within 10 minutes</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i class="fa-solid fa-dollar-sign fa-3x text-warning ml-5"></i>
+            <h2>Great Price</h2>
+           <p>Make your advertisement with low cost</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i class="fa-solid fa-face-smile fa-3x text-warning ml-5"></i>
+            <h2>Permanent Adds</h2>
+           <p>Emails are becomming perminent in the customers</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i class="fa-solid fa-comments fa-3x text-warning ml-5"></i>
+            <h2>One on one Communication</h2>
+           <p>You can connect directly with the customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--slider (courusel) section beginings-->
+    <section id="comments" class="bg-dark-blue text-light">
+      <div class="container-fluid">
+
+        <!-- Slides are not interactive
+        Add  -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center comment">
+                <p>Very fast responsive customer service! I sent multiple mails within minutes. There were people who were responded mimediatelly. It is very very exciting and awesome system.</p>
+                <img src="images\avatar.jpg" class="rounded-circle avatar-img">
+                Jim Carrey
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center comment">
+                <p>I honestly wasn't expecting such a good quality service with this price. Custumer service was very helpful. I keep getting fast responses from the customers.</p>
+                <img src="images\avatar.jpg" class="rounded-circle avatar-img">
+                Jean Connery
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center comment">
+                <p>I got different similar E0Mail marketing services, but non of them was fast and reliable than your service. I will be your permanent customer and I am very happy with your service!</p>
+                <img src="images\avatar.jpg" class="rounded-circle avatar-img">
+                Jim Carrey
+              </div>
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button> -->
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="pricing" class="prising-section">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--text-center for alingment of the texts-->
+          <div class="card text-center">
+            <div class="card-header">
+              Monthly
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">9.99$</h5>
+              <p class="card-text">
+                1.000 Main Daily<br>
+                7/24 Communication<br>
+                No technical support<br
+              </p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <div class="card-header">
+              Yearly
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">99.99$</h5>
+              <p class="card-text">
+                1.000 Main Daily<br>
+                7/24 Communication<br>
+                yes technical support<br
+              </p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <div class="card-header">
+              Lifelong
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">999.99$</h5>
+              <p class="card-text">
+                No limit<br>
+                7/24 Communication<br>
+                yes technical support<br
+              </p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--Footer section-->
+    <section id="footer" class="bg-dark-blue text-light">
+      <div class="container-fluid p-5" >
+        <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://twitter.com/">  <i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" href="https://twitter.com/"> <i class="fa-brands fa-whatsapp"></i></a>
+        <span class="ml-3"> <i class="fa-solid fa-copyright"></i>All Right Reserved</span>
+
+      </div>
+
     </section>
   
 </body>

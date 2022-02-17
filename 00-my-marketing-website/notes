@@ -1,0 +1,81 @@
+ <!-- 
+https://getbootstrap.com/ 
+Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+-----------------
+ 
+ sections , div,.. block elements are used to seperate the pages in logical order
+  such as top-part, pricing, comments, adds,...
+
+  ---containers-------
+  container : gives some spacing in the right and left
+  container-fluid : making the full width
+
+  ---background collors---
+  bg-primary
+  bg-secondary
+  bg-warning
+  ......
+  -----text colors----
+.text-primary
+.text-secondary
+.text-success
+.text-danger
+.text-warning
+.text-info
+.text-light
+.text-dark
+  ....
+
+  -----nav-bar----
+  we can create nav really quick
+  navbar-dark  : use when background is dark to make text light
+  navbar-light : use when background is light to make text dark
+
+  ---grid system------
+col-lg-3  : 3 units on a large screen - meading 3/12 part of the entire screen
+col-md-6  : 6 units on a medium screen - meading 6/12 part of the entire screen
+col-sm-12 : 12 units on a small screen - meading 12/12 part of the entire screen
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+           Col 1
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+          Col 2
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+           Col3
+          </div>
+        </div>
+-------spacing--------
+Where property is one of:
+
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+l - for classes that set margin-left or padding-left
+r - for classes that set margin-right or padding-right
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+(You can add more sizes by adding entries to the $spacers Sass map variable.)
+
+EXAMPLE: mt-3 : margin top 3
+         pt-5 : padding top 5
+         m-2  : margin all around
+
+
+-->
+© 2022 GitHub, Inc.
+Terms
