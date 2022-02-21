@@ -1,0 +1,28 @@
+.button-style{
+    color:red;
+    background-color: yellow;
+}
+.city-style{
+  
+    border: solid #000000 1px;
+    outline: solid  red 2px;
+    border: width 10px;
+
+  
+
+}
+.image-style{
+  
+    width: 100px;
+    border-radius: 15% ;
+   
+}
+table, td, th{
+    border: 1px solid;
+    border-color: black;
+    
+}
+
+th {
+    color:red;
+}
