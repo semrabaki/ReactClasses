@@ -1,0 +1,46 @@
+.heading{
+    color: red;
+
+}
+
+/* the followings are doing the same thing */
+p{
+    color:blue;
+    font-size: 2rem;
+}
+
+.my-parag{
+    color:blue;
+    font-size: 2rem;
+
+}
+
+.mountain_img{
+    width:100px;
+    height:100px;
+    border-radius: 25px;
+    border:2px solid black;
+}
+
+.kebab-img{
+
+    width:100px;
+    height:100px;
+    border-radius: 25px;
+    border:2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cat-img{
+    width:100px;
+    height:100px;
+    border-radius: 25px;
+    border:2px solid black;
+
+}
+.random-img{
+    width:100px;
+    height:100px;
+    border-radius: 25px;
+    border:2px solid black;
+}
