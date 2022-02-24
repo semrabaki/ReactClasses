@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import pi from'./components/math';
+// import pi from'./components/math'; 
 // import {doublePi,triplePi} from'./components/math'; //when we export multiple items you need to use {}
 //import {triplePi} from'./components/math'; //abive and this correct but above is recommendeed
 import App from './components/App';
 
-import * as mathData from './components/math';
+import * as mathData from './components/math'; //this is not recommended we need to know what we are importing
 
 //mathdata.pi==>{pi}
 
