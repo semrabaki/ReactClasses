@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import Name from "./Name";
 
 
 function Card(props){
@@ -7,7 +8,7 @@ function Card(props){
     return <div>
      <div className="card">
            <div className="top">
-            <h1>{props.name}</h1>
+           <Name name={ props.name}/>
             <Avatar img={props.img}/>  
             {/* //we are passing the data while calling the  avatar component */}
            </div>
