@@ -3,6 +3,7 @@ import React from "react";
 import Input from "./Input";
 function Login(){
     return  <form className="form">
+    <h1>Enter your Creditentials!!!</h1>
     <Input type="text" placeholder="Username"/>
     <Input type="password" placeholder="Password"/>
     {/* <Input type="checkbox"/>
