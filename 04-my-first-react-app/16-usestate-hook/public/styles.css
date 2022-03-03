@@ -27,3 +27,18 @@ button {
   font-weight: bold;
   font-size: 50px;
 }
+
+.reset-button{
+  width:150px;
+  background-color: red;
+}
+
+.getTimeButton{
+  width:200px;
+  font-size: 30px;
+}
+
+.current-time{
+  width:400px;
+  font-size: 60px;
+}
