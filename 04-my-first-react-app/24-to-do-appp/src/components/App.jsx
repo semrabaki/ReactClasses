@@ -1,57 +1,43 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import InputArea from "./InputArea";
 import ToDoItems from "./ToDoItems";
-
 function App() {
-  const [inputText, setInputText]=useState("");
-  const[items,setItems]=useState([]);
-
-  function handleChange(event){
-    console.log(event.target.value)
-    const newValue=event.target.value;
-    setInputText(newValue);
-
-  }
-  function addItems(){
-   
-    setItems((prevItems)=>{
-      //hold all of the previous items and add the new item at the end of the array
-      return[...prevItems, inputText]
-
-    });
-
-    //Clearing input after click
-    setInputText("");
-
-  }
+  const [items, setItems] = useState([]);
+ 
+  function addItems(inputText){
+    // complete the code when you click item should be added on the list
+   setItems((prevItems)=>{
+    //  hold all of the previous items, and add the the new item at the end of the array
+     return [...prevItems,inputText]
+   });}
+function deleteItem(id){
+  // console.log('Delete!!!')
+  setItems((prevItems =>{
+    return prevItems.filter(
+      (eachItem,index)=>{
+        // id only belogs to the item that is clicked
+        // we are returning all indexes that does not include id
+        return index!==id
+      })}))}
   return (
     <div className="container">
       <div className="heading">
-        <h1>My To Do List</h1>
+        <h1>Wish List</h1>
       </div>
       <div className="form">
-        <input
-         type="text"
-          placeholder="enter your wish"
-          value={inputText}
-          onChange={handleChange}
-          />
-        <button onClick={addItems}>
-          <span>Add</span>
-        </button>
+        <InputArea onAdd={addItems}/>
       </div>
       <div>
-        <ul>
-        
-          {items.map((eachItem)=>{
-
-            return  <ToDoItems text={eachItem}/>
-
-          })}
-         
+        <ul>    
+          {items.map((eachItem,index)=><ToDoItems 
+          text={eachItem}
+          onChecked={deleteItem}
+          key={index}
+          id={index}
+         />)}
         </ul>
       </div>
     </div>
   );
 }
-
 export default App;
